@@ -1,6 +1,5 @@
 # Citadel
  Web Project for University of Regina.
-(Not yet uploaded to Github)
 
 👉🏻 FEATURES: 
 
@@ -9,10 +8,16 @@
 • Active User Profile
 • Book's Search 
 • View, Add, Edit, and Delete Book
-• Error detecting on DOM
+• Upload Book Cover
 • View Authors Profile
 • Live data update
-• Data storage, and retrieval 
+• Error Handling on DOM
+• Backend Error Handling
+• Admin Login
+• Admin Panel to delete users and all the content related to them
+• Data storage, and retrieval
+
+
 
 👉🏻 SOFTWARE: HTML, CSS, JavaScript, PHP, MySQL
 
