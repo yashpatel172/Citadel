@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===================================== HEADER ===================================== -->
+    <nav>
+        <div class="logo"><h2>Hello, XXX!</h2></div>
+
+        <ul class="links-editBook" id="links-list">
+            <li><a href="searchBooks.html">Search Books</a></li>
+            <li><a href="addBook.html">Add Book</a></li>
+            <li><a href="myProfile">My Books</a></li>
+            <li class="logout-header"><a href="#">Logout</a></li>
+        </ul>
+
+        <!-- Responsive Burger -->
+        <div id="burger" onclick="burgerFunction()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+
+    <!-- ===================================== EDIT BOOK FORM ===================================== -->
+    <form action="#" method="post" class="editBook-form">
+        <!-- Form Title -->
+        <h2>Edit XXX</h2>
+        
+        <!-- ===================================== MAIN BOX ===================================== -->
+        <div class="box">
+            <!-- Left Box -->
+            <div class="left-side">
+                <!-- Form Input (BookTitle) -->
+                <div class="input-box">            
+                    <input type="text" placeholder="XXX Book Title" autocomplete="off" required />
+                    <label>Required.</label>
+                </div>
+                
+                <!-- Form Input (PublishDate) -->
+                <div class="input-box">            
+                    <input type="text" placeholder="XXX Publish Date" onfocus="(this.type='date')">
+                    <label>Required.</label>
+                </div>
+                
+                <!-- Form Input (PageCount) -->
+                <div class="input-box">
+                    <input type="number" placeholder="XXX Page Count" autocomplete="off" required />
+                    <label>Required. Digits only.</label>
+                </div>
+                
+                <!-- Form Input (ISBN) -->
+                <div class="input-box">            
+                    <input type="number" placeholder="XXX ISBN" autocomplete="off" required />
+                    <label>Required. Digits only.</label>
+                </div>
+
+                <!-- Form Input (EditBookButton) -->
+                <input type="submit" value="Edit Book" class="editBook-button editBook-editbutton" />
+                <input type="submit" value="Cancel" onclick="window.history.go(-1); return false;" class="editBook-button" />
+            </div>
+            
+            <!-- Right Box -->
+            <div class="right-side">
+                <!-- Form Input (BookSummary) -->     
+                <div class="input-box">       
+                    <textarea placeholder="XXX Book Summary"></textarea>
+                    <label>Required. MAX of 500 characters.</label>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- ===================================== SCRIPTS ===================================== -->
+    <!-- Javascript header animations -->
+    <script src="Javascript/nav-animations.js"></script>
+</body>
+</html>

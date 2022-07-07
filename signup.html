@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Javascript/signup_validate.js"></script>
+</head>
+<body>
+    <!-- ===================================== HEADER ===================================== -->
+    <nav>
+        <div class="logo"><h2>Citadel</h2></div>
+        <ul class="links" id="links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+
+        <!-- Responsive Burger -->
+        <div id="burger" onclick="burgerFunction()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+
+    <!-- ===================================== SIGNUP FORM ===================================== -->
+    <form action="searchBooks.html" method="post" class="signup-form" id="signup_form">
+        <!-- Form Title -->
+        <h2>Get Started</h2>
+
+        <!-- Form Login Link -->
+        <p>Already have an account? <a href="login.html">Sign in</a></p>
+        
+        <!-- Form Input (Username) -->
+        <div class="input-box">            
+            <input type="text" id="username_field" placeholder="Username" autocomplete="off" required />
+            <label id="label_username" class="err_msg">Only letters (a-z, A-Z), numbers (0-9) are allowed.</label>
+        </div>
+
+        <!-- Form Input (Email) -->
+        <div class="input-box">            
+            <input type="email" id="email_field" placeholder="Email" autocomplete="off" required />
+            <label id="label_email" class="err_msg">Max 200 characters without spaces & some special characters.</label>
+        </div>
+        
+        <!-- Form Input (Password) -->
+        <div class="input-box">
+            <input type="password" id="password_field" placeholder="Password" autocomplete="off" required />
+            <label id="label_password" class="err_msg">Min 6 characters, atleast one (a-z, A-Z, 0-9, special) are allowed.</label>
+        </div>
+
+        <!-- Form Input (ConfirmPassword) -->
+        <div class="input-box">            
+            <input type="password" id="confirmpassword_field" placeholder="Confirm Password" autocomplete="off" required />
+            <label id="label_confirmpassword" class="err_msg">Enter the same password as before, for verification.</label>
+        </div>
+        
+        <!-- Form Input (SignUpButton) -->
+        <input type="submit" value="Sign Up" class="signup-button" />
+        
+        <!-- Form Terms & Conditions -->
+        <p class="extra-space">By signing up, you agree to <a href="#">Citadel's Terms and Conditions.</a></p>
+    </form>
+
+    <!-- ===================================== SCRIPTS ===================================== -->
+    <!-- Javascript header animations -->
+    <script src="Javascript/nav-animations.js"></script>
+    <script src="Javascript/signup_validate-r.js"></script>
+</body>
+</html>
