@@ -20,7 +20,7 @@ Web Project for University of Regina.
 👉🏻 SOFTWARE: HTML, CSS, JavaScript, PHP, MySQL
 👉🏻 TOOLS: Visual Studio Code, Coolors
 
-👉🏻 PROJECT REPORT: In-Progress...
+👉🏻 Project Final Report and Presentation files included.
 
 👉🏻 LIVE WEBSITE: (NOTE: Hosted on University server. Only use dummy input.)
 
