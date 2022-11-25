@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citadel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===================================== HEADER ===================================== -->
+    <nav>
+        <div class="logo"><h2>Citadel</h2></div>
+        <ul class="links-homepage" id="links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#disclaimer">Disclaimer</a></li>
+            <li class="login-header"><a href="login.php">Login</a></li>
+            <li class="signup-header"><a href="signup.php">Sign Up</a></li>
+        </ul>
+
+        <!-- Responsive Burger -->
+        <div id="burger" onclick="burgerFunction()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+
+    <!-- ===================================== HOME SECTION ===================================== -->
+    <section id="home" class="home">
+        <div>
+            <h1>Welcome to Citadel</h1>
+            <p>Explore the books from other authors or create your own portfolio.</p>
+        </div>
+    </section>
+
+    <!-- ===================================== TEAM SECTION ===================================== -->
+
+    <section id="team" class="team">
+        <h2>Our Team</h2>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="img/Team_Yash.jpg" alt="Profile 1" />
+                </div>
+
+                <div class="info">
+                    <h3>Yash Patel</h3>
+                    <p>Creator 1</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/Team_Jaydeep.jpg" alt="Profile 2" />
+                </div>
+
+                <div class="info">
+                    <h3>Jaydeep Lakhani</h3>
+                    <p>Creator 2</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================== FEATURES SECTION ===================================== -->
+    <section id="features" class="features">
+        <h2 class="section-heading">Features</h2>
+        <div class="box-container">
+            <div class="box">
+                <ion-icon name="search-outline"></ion-icon>
+                <h3>Search Books</h3>
+                <p>Find books from our database.</p>
+            </div>
+        
+            <div class="box">
+                <ion-icon name="people-outline"></ion-icon>
+                <h3>Find Authors</h3>
+                <p>Find authors around the world.</p>
+            </div>
+        
+            <div class="box">
+                <ion-icon name="add-circle-outline"></ion-icon>
+                <h3>Add Books</h3>
+                <p>Add your book details anytime.</p>
+            </div>
+        
+            <div class="box">
+                <ion-icon name="create-outline"></ion-icon>
+                <h3>Edit Books</h3>
+                <p>Edit your books details on the go.</p>
+            </div>
+        
+            <div class="box">
+                <ion-icon name="accessibility-outline"></ion-icon>
+                <h3>User Friendly</h3>
+                <p>Easy to traverse on the go.</p>
+            </div>
+        
+            <div class="box">
+                <ion-icon name="analytics-outline"></ion-icon>
+                <h3>Evolving</h3>
+                <p>New features every month.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================== FOOTER SECTION ===================================== -->
+    <section id="disclaimer" class="footer">
+        <h2 class="section-heading">Disclaimer</h2>
+        <div>
+            <p>Project done for course CS 476 hosted on University of Regina server. This means that website can be under maintenance/takendown any time. Security isnt guranteed so our team (Yash & Jaydeep) arent responsible for any loss or leak of data. Use only dummy data as input. Thanks have fun exploring!</p>
+        </div>
+    </section>
+
+    <!-- ===================================== SCRIPTS ===================================== -->
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Javascript header animations -->
+    <script src="Javascript/nav-animations.js"></script>
+</body>
+</html>
